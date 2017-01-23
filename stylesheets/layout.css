@@ -1,0 +1,324 @@
+html {
+    color: #414a5a;
+    font-family: 'Open Sans', arial, helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 100%;
+    -webkit-text-size-adjust: 100%
+}
+body {
+    background: url('../images/bg-body-2.gif');
+    margin: 0
+}
+.invisible {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(1px 1px 1px 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px
+}
+#page {
+    min-width: 960px;
+    position: relative
+}
+#content {
+    margin: 0 auto;
+    width: 960px
+}
+.layout-twocol #content-section {
+    float: left;
+    width: 640px
+}
+#content-section .inner {
+    margin: 0 10px;
+    padding: 40px 20px;
+    width: auto;
+    background: white;
+}
+#marginal-section {
+    float: left;
+    width: 320px
+}
+#marginal-section .inner {
+    width: auto
+}
+.inner {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    width: 960px
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+*+html .clearfix {
+    display: inline-block
+}
+* html .clearfix {
+    height: 1%
+}
+#header {
+    background: url('../images/bg-header.jpg') center top no-repeat #2f3538;
+    background-size: 100% auto;
+    min-height: 170px
+}
+#header .inner .logos {
+    font-size: 0;
+    padding: 7px 0 0;
+    position: relative
+}
+#header .inner .logos .sponsors {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+#header .inner .logos a,
+#header .inner .logos img {
+    border: 0;
+    display: inline-block;
+    vertical-align: bottom
+}
+#header .inner .logos>a,
+#header .inner .logos .sponsors>a,
+#header .inner .logos>img,
+#header .inner .logos .sponsors>img {
+    margin: 0 0 0 35px
+}
+#header .inner .logos>a.onlinehelden,
+#header .inner .logos .sponsors>a.onlinehelden,
+#header .inner .logos>img.onlinehelden,
+#header .inner .logos .sponsors>img.onlinehelden {
+    margin-left: 0
+}
+#header .inner .logos>a.sap,
+#header .inner .logos .sponsors>a.sap,
+#header .inner .logos>img.sap,
+#header .inner .logos .sponsors>img.sap {
+    margin-bottom: 24px;
+    margin-left: 60px
+}
+#header .inner .logos>a.betterplace,
+#header .inner .logos .sponsors>a.betterplace,
+#header .inner .logos>img.betterplace,
+#header .inner .logos .sponsors>img.betterplace {
+    margin-bottom: 28px
+}
+#content {
+    padding: 35px 0 50px
+}
+#footer {
+    background: #2f3538;
+    padding: 17px 0 14px
+}
+#footer .inner {
+    font-size: 0
+}
+#footer .inner .sponsors {
+    vertical-align: middle;
+    text-align: right;
+    width: 560px
+}
+#footer .inner>*,
+#footer .inner .sponsors>* {
+    display: inline-block;
+    vertical-align: middle
+}
+#footer .inner>*.logo,
+#footer .inner .sponsors>*.logo {
+    vertical-align: middle
+}
+#footer .inner>*.logo img,
+#footer .inner .sponsors>*.logo img {
+    display: block
+}
+#footer .onlinehelden {
+    width: 140px
+}
+#footer ul {
+    width: 200px
+}
+#footer .sap {
+    margin-left: 104px
+}
+#footer .betterplace {
+    margin-left: 46px
+}
+#footer .fundraiser {
+    margin-left: 32px
+}
+#copyright {
+    padding: 11px 0 20px
+}
+#copyright p {
+    color: #9d9d9d;
+    font-size: 12px;
+    margin: 0;
+    text-align: right
+}
+@media screen and (max-width: 1600px) {
+    #header {
+        background-size: 1600px auto
+    }
+}
+@media screen and (max-width: 978px) {
+    #page {
+        min-width: 100%
+    }
+    .layout-twocol #content-section {
+        width: 66%
+    }
+    #marginal-section {
+        width: 33%
+    }
+    #content,
+    .inner {
+        width: 100%
+    }
+    #header {
+        background-size: auto 100%
+    }
+    #header .inner .logos {
+        padding-bottom: 7px
+    }
+    #header .inner .logos>a.onlinehelden,
+    #header .inner .logos>img.onlinehelden {
+        margin-left: 0
+    }
+    #header .inner .logos>a.sap,
+    #header .inner .logos>img.sap {
+        margin-bottom: 0;
+        margin-left: 0
+    }
+    #header .inner .logos>a.betterplace,
+    #header .inner .logos>img.betterplace {
+        margin-bottom: 0
+    }
+    #footer .inner {
+        text-align: center
+    }
+    #footer .inner ul {
+        text-align: left;
+        width: auto
+    }
+    #footer .inner .sponsors {
+        display: block;
+        margin-top: 7px;
+        text-align: center;
+        width: auto
+    }
+    #footer .inner>*,
+    #footer .inner .sponsors>* {
+        display: inline-block;
+        vertical-align: top
+    }
+    #footer .inner>*.logo,
+    #footer .inner .sponsors>*.logo {
+        vertical-align: middle
+    }
+    #footer .inner>*.logo img,
+    #footer .inner .sponsors>*.logo img {
+        display: block
+    }
+    #footer .onlinehelden,
+    #footer .sap,
+    #footer .betterplace,
+    #footer .stifterhelfen {
+        margin-left: 0;
+        padding: 10px;
+        width: auto
+    }
+}
+@media screen and (max-width: 767px) {
+    .layout-twocol #content-section,
+    #marginal-section {
+        float: none;
+        width: 100%
+    }
+    #marginal-section {
+        margin-top: 35px
+    }
+    #header .inner .logos {
+        text-align: center
+    }
+    #header .inner .logos .sponsors {
+        display: block;
+        text-align: center;
+        position: static
+    }
+    #header .inner .logos>a,
+    #header .inner .logos .sponsors>a,
+    #header .inner .logos>img,
+    #header .inner .logos .sponsors>img {
+        margin: 0;
+        text-align: center
+    }
+    #header .inner .logos>a.onlinehelden,
+    #header .inner .logos .sponsors>a.onlinehelden,
+    #header .inner .logos>img.onlinehelden,
+    #header .inner .logos .sponsors>img.onlinehelden {
+        margin-left: 0;
+        margin-right: 0
+    }
+    #header .inner .logos>a.sap,
+    #header .inner .logos .sponsors>a.sap,
+    #header .inner .logos>img.sap,
+    #header .inner .logos .sponsors>img.sap,
+    #header .inner .logos>a.betterplace,
+    #header .inner .logos .sponsors>a.betterplace,
+    #header .inner .logos>img.betterplace,
+    #header .inner .logos .sponsors>img.betterplace {
+        padding: 10px
+    }
+    #header .inner .logos>a.sap,
+    #header .inner .logos .sponsors>a.sap,
+    #header .inner .logos>img.sap,
+    #header .inner .logos .sponsors>img.sap {
+        margin-bottom: 0;
+        margin-left: 0
+    }
+    #header .inner .logos>a.betterplace,
+    #header .inner .logos .sponsors>a.betterplace,
+    #header .inner .logos>img.betterplace,
+    #header .inner .logos .sponsors>img.betterplace {
+        margin-bottom: 0
+    }
+}
+@media screen and (max-width: 479px) {
+    #header .inner .logos {
+        text-align: center
+    }
+    #header .inner .logos>a.onlinehelden,
+    #header .inner .logos .sponsors>a.onlinehelden,
+    #header .inner .logos>img.onlinehelden,
+    #header .inner .logos .sponsors>img.onlinehelden {
+        margin-right: 0;
+        padding: 10px
+    }
+    #footer .inner {
+        text-align: center
+    }
+    #footer .inner ul {
+        display: block;
+        margin-left: 0;
+        text-align: center;
+        width: auto
+    }
+    #footer .onlinehelden,
+    #footer .sap,
+    #footer .betterplace,
+    #footer .stifterhelfen {
+        margin-left: 0;
+        padding: 10px
+    }
+}
