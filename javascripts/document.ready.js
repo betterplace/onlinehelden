@@ -8,6 +8,7 @@ $(document).ready(function() {
 
     $(target).toggle();
     $('body, html').animate({ scrollTop: position_y}, 500);
+    $(this).hide();
   })
 
 });
