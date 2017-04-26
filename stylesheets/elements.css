@@ -15,19 +15,20 @@ h1 {
 }
 h2 {
     font-size: 28px;
-    line-height: 32px;
-    margin-top: 30px;
+    line-height: 36px;
+    margin-top: 60px;
     margin-bottom: 15px;
     font-weight: 300;
 }
 h3 {
   font-size: 15px;
   line-height: 20px;
-  margin-bottom: 25px
+  margin-bottom: 10px;
+  margin-top: 40px;
 }
 iframe {
   border: 1px solid #058391;
-  margin: 20px auto;
+  margin: 0 auto;
   display: block;
   max-width: 100%;
 }
@@ -47,6 +48,10 @@ ol {
 a {
     color: #ef1d1d;
     text-decoration: none
+}
+ul + iframe,
+p + iframe {
+  margin-top: 20px  ;
 }
 a:focus,
 a:hover {
